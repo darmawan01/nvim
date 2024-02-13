@@ -41,7 +41,6 @@ local on_attach = function(_, bufnr)
 end
 
 local servers = {
-  -- clangd = {},
   gopls = {
     cmd = { "gopls", "serve" },
     settings = {
@@ -53,7 +52,8 @@ local servers = {
       },
     },
   },
-  -- add another server
+  tailwindcss = {},
+  tsserver = {},
 }
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
