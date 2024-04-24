@@ -6,3 +6,6 @@ local keymap = vim.keymap
 
 -- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
+
+--- clipboard
+keymap.set("v", "<leader>y", '"+y', { desc = "Yank to clipboard" })
